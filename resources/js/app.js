@@ -5,10 +5,10 @@ import { createInertiaApp } from '@inertiajs/vue3';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 import Layout from './Layouts/DefaultLayout.vue';
 
-const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+const appName = import.meta.env.VITE_APP_NAME;
 
 createInertiaApp({
-    title: title => `${title} - ${appName}`,
+    title: title => `${title} ${appName ? ' - ' + appName : ''}`,
     resolve: name => {
         const pages = import.meta.glob('./Pages/**/*.vue', { eager: true });
         let page = pages[`./Pages/${name}.vue`];
