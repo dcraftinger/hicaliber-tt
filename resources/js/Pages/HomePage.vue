@@ -39,11 +39,11 @@ defineProps({
 </template>
 
 <style>
-    .title {
-        margin-bottom: 20px;
-        font-weight: var(--el-font-weight-primary);
-        font-size: var(--el-font-size-large);
-        font-family: var(--el-font-family);
-        text-transform: uppercase;
-    }
+.title {
+    margin-bottom: 20px;
+    font-weight: var(--el-font-weight-primary);
+    font-size: var(--el-font-size-large);
+    font-family: var(--el-font-family);
+    text-transform: uppercase;
+}
 </style>
